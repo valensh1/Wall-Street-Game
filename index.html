@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wall Street Game</title>
+</head>
+    <body>
+        <header>
+            <h1>So you want to make it on Wall Street?</h1> 
+            <div id="#background-container">
+                <img id="background-photo" src="https://www.intelliventors.com/wp-content/uploads/2012/04/wall-street-bull.jpg">
+                <button id="start-game">Start Game</button>
+                <h1 id="instructions">INSTRUCTIONS</h1>
+              <div class="target-money">
+                <label for="target-money">Target Money Goal</label>
+                <input id="target-money" value="1000000" type="number">
+            </div>
+
+            <div id="metrics-container" class="metrics-container">
+                <div class="player1-container">
+                    <h1>Player 1</h1>
+                    <div id="player1-money" class="player1-money">
+                        <h2>Money</h2>
+                        <h3 id="p1-money" class="players-money">$100,000</h2>
+                    </div>
+                
+                    <div id="player1-greed" class="player1-greed">
+                        <label for="player1-greed">GREED LEVEL:</label>
+                        <meter id="player1-greed" value="10" min="0" max="10" low="3" high="7"></meter>
+                        <h3>10</h2>
+                    </div>
+                </div> 
+
+                <div class="player2-container">
+                    <h1>Player 2</h1> 
+                    <div id="player2-money" class="player2-money">
+                        <h2>Money</h1>
+                        <h3 id="p2-money" class="players-money">$100,000</h2>
+                    </div>
+                
+                    <div id="player2-greed" class="player2-greed">
+                        <label for="player1-greed">GREED LEVEL:</label>
+                        <meter id="player1-greed" value="10" min="0" max="10" low="3" high="7"></meter>
+                        <h3>10</h2>
+                    </div>
+                </div> 
+            </div>  
+        </header>
+
+        <div id="modal-container" class="modal-instructions">
+            <div id="modal" class="modal">
+                <p id="modal-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, officia ducimus illum ipsum inventore doloribus possimus, laborum quibusdam, ex sapiente corporis! Magni accusamus qui voluptatum, consequuntur ipsum itaque sint eum.</p>
+                <button id="close-button">CLOSE</button>
+            </div>
+        </div> 
+
+        <div id="modal-picture-container" class="modal-picture">
+            <div id="modal-picture" class="modal-picture">
+                <p id="modal-picture-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, officia ducimus illum ipsum inventore doloribus possimus, laborum quibusdam, ex sapiente corporis! Magni accusamus qui voluptatum, consequuntur ipsum itaque sint eum.</p>
+                    
+            </div>
+        </div> 
+
+        <div class="stock-symbol-section" id="stock-symbols">
+            <img id="facebook" class="stock-symbols not-active" src="./Images/Facebook.png">
+            <img id="amazon" class="stock-symbols not-active" src="https://i.insider.com/539f3ffbecad044276726c01?width=1100&format=jpeg&auto=webp">
+            <img id="apple" class="stock-symbols not-active" src="./Images/Apple.png">
+            <img id="netflix" class="stock-symbols not-active" src="./Images/Netflix.png">
+            <img id="google" class="stock-symbols not-active" src="./Images/Google.jpeg">
+            <img id="starbucks" class="stock-symbols not-active" src="./Images/Starbucks.png">
+        </div>
+
+        <div id="action-buttons" class="action-buttons">
+            <button id="keep-trading" class="action-buttons">Trade Stocks</button>
+            <button id="keep-tradingP2" class="action-buttons">Trade Stocks</button>
+            <button id="p1-hedge" class="action-buttons">Hedge Positions & Take Day Off</button>
+            <button id="p2-hedge" class="action-buttons">Hedge Positions & Take Day Off</button>
+        </div>
+
+        <h1 id="vs">VS.</h1>
+
+       <div id="money-change-container" class="money-change-message">
+          <div id="money-change-modal" class="money-change-message">
+            <p id="money-change-message" class="money-change-message">Your portfolio changed $</p>
+          </div>
+       </div>
+       
+
+      
+  
+    <link rel="stylesheet" href="wallSt.css">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="wallSt.js" charset="utf-8"></script>
+    </body>
+</html>

@@ -1,0 +1,441 @@
+h1 {
+    position: relative;
+    left: 0%;
+    color:black;
+    text-align: center;
+    font-size: 2em;
+}
+
+#background-container {
+  position: fixed; 
+  top: 0%; 
+  left: 0%; 
+  width: 200%; 
+  height: 200%;
+  border: 3px solid blue;
+  
+}
+
+#background-photo {
+opacity: .6;
+  position: absolute; 
+  top: 10; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 70%;
+  min-height: 95%;
+  z-index: -20000;  
+}
+
+#start-game {
+    position: fixed;
+    left: 40%;
+    color:red;
+    border-radius: 5px;
+    font: bold;
+    font-size: 30px;
+    background-color: darkgray; 
+    cursor: pointer; 
+}
+
+#instructions {
+    position: fixed;
+    width: fit-content;
+    left: 50vw;
+    top: 4.7vh;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: darkgray;
+    color: red;
+    cursor: pointer;
+}
+
+#instructions:hover, #start-game:hover {
+  /*animation-name: rainbow;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;*/
+  animation:shadow-pop-tr .3s cubic-bezier(.47,0.000,.745,.715) both;
+  background-color: black;
+}
+  
+  @keyframes shadow-pop-tr{
+      0%{box-shadow:0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e,0 0 #3e3e3e;transform:translateX(0) translateY(0)}
+      100%{box-shadow:1px -1px #3e3e3e,2px -2px #3e3e3e,3px -3px #3e3e3e,4px -4px #3e3e3e,5px -5px #3e3e3e,6px -6px #3e3e3e,7px -7px #3e3e3e,8px -8px #3e3e3e;transform:translateX(-8px) translateY(8px)}
+    }
+
+.target-money {
+    position: relative;
+    left: 42%;
+    display: none;
+}
+
+.modal-instructions {
+    display: none;
+    position: absolute;
+    text-align: justify;
+    justify-content: center;
+    top: 30%;
+    left: 35%;
+    min-width: 30%;
+    min-height: 30%;
+    background-color: rgba(0,0,0,0.5);
+    border: 3px solid green;
+}
+
+.modal {
+    border: 5px solid blue;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white; 
+    z-index: 1;
+}
+
+/* MODIFIED MODAL PICTURE SECTION*/
+#modal-picture-container {
+    position: relative;
+    left: 19.4%;
+    width: 60%;
+    height: 55vh;
+    top: 10vh;
+    margin-right: 20%;
+}
+
+#modal-picture {
+    position: absolute;
+    display: inline-block;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;  
+}
+
+#picture-modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+
+}
+
+#modal-picture-message {
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    background-color:black;
+    color: white;
+    visibility: hidden;
+    font-size: 3vh;
+}
+
+#close-modal-picture {
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    top: 84%;
+    width: 150px;
+    height: 50px;
+    background-color: darkgray;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.modal p, .modal button {
+    color: red;
+    margin-top: 15%;
+}
+
+/* Side Bar*/
+.player1-container {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+
+.player1-container > h1 {
+    border: 3px solid green;
+    background-color: black;
+    color: red;
+}
+
+.player1-money {
+    border: 3px solid green;
+    display: inline-block;
+    text-align: center;
+    width: 7vw;
+    
+}
+
+.player1-greed {
+    border: 3px solid blue;
+    display: inline-block;
+    text-align: center;
+    width: 7vw;
+}
+
+.player2-container > h1 {
+    border: 3px solid green;
+    background-color: black;
+    color: red;
+}
+
+.player2-container {
+    position: fixed;
+    top: 0%;
+    right: 0%;
+}
+
+.player2-money {
+    border: 3px solid green;
+    display: inline-block;
+    text-align: center;
+    width: 7vw;
+}
+
+.player2-greed {
+    border: 3px solid blue;
+    display: inline-block;
+    text-align: center;
+    width: 7vw;
+}
+
+meter {
+    height: 2.5vh;
+}
+
+.modal button {
+    margin-top: 0%;
+}
+
+
+.action-buttons {
+   display: flex;
+   flex-direction: column;
+   width: 75px;
+   margin-bottom: 15%;
+   cursor: pointer;
+}
+
+
+
+.stock-symbol-section {
+    position: relative;
+    max-width: 40vw;
+    max-height: 70vh;
+    margin: auto;
+    top: -50vh;
+    left: -2%;
+    /*border: 6px solid yellow;*/
+}
+
+
+.stock-symbols {
+    display: inline-flex;
+    justify-content: space-around;
+    top: 0;
+    left: 0%;
+    width: 25%;
+    height: 300px;
+    margin-left: 5%;
+    margin-top: 10%;
+    margin-bottom: 5%; 
+    border: 5px solid red;
+    cursor: pointer;
+}
+
+#keep-trading {
+    position: fixed;
+    top: 17%;
+    left: 1%;
+    text-align: center;
+    vertical-align: center;
+    width: fit-content 
+}
+
+#keep-tradingP2 {
+    position: fixed;
+    top: 17%;
+    right: 1%;
+    text-align: center;
+    vertical-align: center;
+    width: fit-content
+}
+
+#p1-hedge {
+    position: fixed;
+    top: 20%;
+    left: 1%;
+    text-align: center;
+    vertical-align: center;
+    width: fit-content
+}
+
+#p2-hedge {
+    position: fixed;
+    top: 20%;
+    right: 1%;
+    text-align: center;
+    vertical-align: center;
+    width: fit-content
+}
+
+.not-active {
+    visibility: hidden;
+}
+
+.active {
+    visibility: visible;
+}
+
+#facebook, #amazon, #apple, #netflix, #google, #starbucks {
+    transform: scale(1);
+    /*animation: size-in 3s 1;*/
+    animation-name: amazonAnimation;
+    animation-duration: 5s;
+    animation-iteration-count:1;
+    opacity: 1; 
+    background: none;
+}
+
+#p1-remaining {
+    position: fixed;
+    left: -4%;
+    width: 12%;
+    top: 5%; 
+    animation-name: playerChoicesAnimation;
+    animation-duration: 5s;
+    animation-iteration-count:1;
+}
+
+#p2-remaining {
+    position: fixed;
+    left: 81.4%;
+    top: 5%; 
+    width: 12%;
+    animation-name: playerChoicesAnimation;
+    animation-duration: 5s;
+    animation-iteration-count:1; 
+}
+
+
+#vs {
+    visibility: hidden;
+    font-size: 15vh;
+    position: fixed;
+    top: 25%;
+    left: 43%;
+    animation-name: vsAnimation;
+    animation-iteration-count:infinite;
+    animation-duration: 6s; 
+}
+
+#money-change-container {
+    display: none;
+    position: relative;
+    width: 40%;
+    height: 12vh;
+    bottom: 87vh;
+    margin: auto;
+    border: 3px solid white;
+    border-radius: 30px;
+    background-color: clear 
+}
+
+#money-change-modal {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 38px;
+    border: 3px solid green;
+    background-color: white;
+    color: darkgreen; 
+}
+
+#money-change-message {
+   max-width: 100%;
+   text-align: center;
+   font-weight: bold;
+   opacity: 1;
+   font-size: 2vh;
+}
+
+#left-arrow {
+position: fixed;
+height: 30px;
+width: 300px;
+left: 7%;
+top: 16.5%;
+animation-name: leftArrowAnimation;
+animation-duration: 15s;
+animation-iteration-count: 1;
+}
+
+#arrow-message {
+    color: red;
+    position: fixed;
+    height: 50px;
+    width: fit-content;
+    display: inline-block;
+    left: 20%;
+    top: 15.5%;
+    font: bold;
+    animation-name: leftArrowAnimation;
+    animation-duration: 15s;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes amazonAnimation {
+    0% {transform: scale(.5)}
+    10% {transform: scale(.8)}
+    20% {transform: scale(1.5) rotate(90deg)}
+    30% {transform: scale(1.8) rotate(-90deg)}
+    40% {transform: scale(2.3)}
+    50% {transform: scale(2.8)}
+    60% {transform: scale(3.2) translate(300px)}
+    75% {transform: scale(3.5) translate(500px)}
+    80% {transform: scale(3.8)}
+    90% {transform: scale(4.5) skew(50deg) translate(-600px,1000px)}
+    100% {transform: scale(4.8)}
+    }
+
+    @keyframes playerChoicesAnimation {
+        0% {transform: scale(.5)}
+        10% {transform: scale(.8) rotate(360deg)}
+        20% {transform: scale(1.5) rotate(-360deg)}
+        30% {transform: scale(1.8) rotate(180deg)}
+        40% {transform: scale(2.3) rotate(-180deg)}
+        50% {transform: scale(2.8) rotate(90deg)}
+        60% {transform: scale(3.2) rotate(-90deg)}
+        75% {transform: scale(3.5) rotate(45deg)}
+        80% {transform: scale(3.8) rotate(-45deg)}
+        90% {transform: scale(4.5) skew(50deg)}
+        100% {transform: scale(4.8)}
+        }
+
+    @keyframes vsAnimation {
+        0% {transform: rotate3d(0, 1, 0.5, 0) scale(1)}
+        10% {transform: rotate3d(0, 1, 0.5, 0) scale(.5)}
+        20% {transform: rotate3d(0, 1, 0.5, 0) scale(1)}
+        30% {transform: rotate3d(0, 1, 0.5, 0) scale(.5)}
+        40% {transform: rotate3d(0, 1, 0.5, 0) scale(1)}
+        50% {transform: rotate3d(0, 1, 0.5, 0) scale(.5)}
+        60% {transform: rotate3d(0, 1, 0.5, 3.142rad) scale(1)}
+        75% {transform: rotate3d(0, 1, 0.5, 3.142rad) scale(.5); color: red;}
+        80% {transform: rotate3d(0, 1, 0.5, 3.142rad) scale(1); color: darkred;}
+        90% {transform: rotate3d(0, 1, 0.5, 0) scale(.5); color: green;}
+        100% {transform: rotate3d(0, 1, 0.5, 0) scale(1); color: darkgreen;}
+        }
+
+    @keyframes leftArrowAnimation {
+        0% {transform: rotate3d(0, 1, 0.5, 0) scale(1)}
+        25% {transform: rotate3d(0, 1, 0.5, 0) scale(2)}
+        50% {transform: rotate3d(0, 1, 0.5, 0) scale(1)}
+        75% {transform: rotate3d(0, 1, 0.5, 0) scale(2)}
+        100% {transform: rotate3d(0, 1, 0.5, 0) scale(1)}
+        }
