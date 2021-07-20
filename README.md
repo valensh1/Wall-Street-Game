@@ -35,7 +35,7 @@ Clone or download this repo to your local machine, unzip and open index.html fil
 Good day trading stocks
 ![How To Use](Images/Screenshot3.png?raw=true "Good stock market day")
 
-4. Click Hedge Positions & Take Day Off button when you want to stop your turn when you fear that the next trading day could be a disaster and set your portfolio back or you may encounter an unlucky health problem. You would want to choose this option when you have a healthy cash balance and hope that the competing player may lose all his money before you. 
+4. Click Hedge Positions & Take Day Off button when you want to stop your turn when you fear that the next trading day could be a disaster and set your portfolio back or you may encounter an unlucky health problem. You would want to choose this option when you have a healthy cash balance and hope that the competing player may lose all his money first. 
 ![How To Use](Images/Screenshot4.png?raw=true "Click hedge positions & take day off button")
 
 5. Winner is the first to reach 1 million dollars or when the other player loses all their money
@@ -44,7 +44,7 @@ Good day trading stocks
 
 ### The Challenge
 
-This was my first project from my General Assembly coding bootcamp class. The challenge was coming up with an interactive, fun and humerous 2 player game that incorporated one of my passions in life which is the stock market.
+This was my first project from my General Assembly coding bootcamp class. The challenge was coming up with an interactive, fun and humorous 2 player game that incorporated one of my passions in life which is the stock market.
 
 
 ### Links
